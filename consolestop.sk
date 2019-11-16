@@ -1,0 +1,20 @@
+# Stop Skript von derbetakevin 2/2
+#         Version 1.0
+# Support bei Discord: http://dbkskripts.betabuilders.de/
+# Support bei Telegram: http://t.me/derbetakevin
+# Seite zum Skript: 
+
+# DAS SKRIPT stop.sk MUSS INSTALLIERT SEIN!!!
+# DAS SKRIPT stop.sk MUSS INSTALLIERT SEIN!!!
+# DAS SKRIPT stop.sk MUSS INSTALLIERT SEIN!!!
+
+command /consolestop:
+    aliases: /cstop, /cs
+    description: Befehl, um den Server wirklich zu stoppen
+    permission: *
+    trigger:
+        execute console command "sk disable stop.sk"
+        execute console command "stop"
+
+on server start:
+    execute console command "sk enable stop.sk"

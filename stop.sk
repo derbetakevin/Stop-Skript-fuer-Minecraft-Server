@@ -1,0 +1,20 @@
+# Stop Skript von derbetakevin 1/2
+#         Version 1.0
+# Support bei Discord: http://dbkskripts.betabuilders.de/
+# Support bei Telegram: http://t.me/derbetakevin
+# Seite zum Skript: 
+
+# DAS SKRIPT consolestop.sk MUSS INSTALLIERT SEIN!!!
+# DAS SKRIPT consolestop.sk MUSS INSTALLIERT SEIN!!!
+# DAS SKRIPT consolestop.sk MUSS INSTALLIERT SEIN!!!
+
+# Normaler Stopbefehl den Spieler normalerweise kennen
+command /stop:
+    description: Befehl, um selbst gekickt zu werden weil man denkt, der Server wird heruntergefahren
+# Permission die ein Spieler haben muss, um den Befehl auszuführen. Wenn eine Permission benötigt wird, dann die # Symbole entfernen
+#    permission: permission.stop
+    trigger:
+# Kickcommand der den Spieler kickt. Ab "Der Server ..." kannst du die Nachricht individuell anpassen. #
+        execute console command "/kick %player% Der Server wurde für dich gestoppt"
+# BroadcastNachricht die in den Server geschickt wird, wenn ein Spieler gekickt wird. Kann ggf. entfernt werden. #
+        broadcast "&4SERVER Kicksystem &7| &cDer Server wurde für %player% gestoppt."
